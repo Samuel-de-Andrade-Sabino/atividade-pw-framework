@@ -15,7 +15,10 @@
       }
    </style>
    <!--- FIM CSS ---------------->
+
+
 </head>
+
 
 <body>
    <section class="section">
@@ -99,9 +102,33 @@
                <img class="imagem-produto" src="imagens/headset_gamer_pro.png" alt="Headset Gamer Pro">
             </div>
          </div>
+         <button class="button" id="abrir-modal">Ver promoção</button>
+         <div class="modal" id="modal-promocao">
+            <div class="modal-background">
+            </div>
+            <div class="modal-content">
+               <div class="box">
+                  <h2 class="title">Oferta especial</h2>
+                  <p>Compre o kit completo e ganhe 10% de desconto!</p>
+                  <button class="button" id="fechar-modal">Fechar</button>
+               </div>
+            </div>
+         </div>
       </div>
    </section>
-
+   <!-- JavaScript -->
+   <script>
+      const modal = document.getElementById("modal-promocao");
+      const abrirModal = document.getElementById("abrir-modal");
+      const fecharModal = document.getElementById("fechar-modal");
+      abrirModal.addEventListener("click", function () {
+         modal.classList.add("is-active");
+      });
+      fecharModal.addEventListener("click", function () {
+         modal.classList.remove("is-active");
+      });
+   </script>
+   <!-- FIM JavaScript -->
 </body>
 
 </html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TechStore</title>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+   <!--- CSS ---------------->
+   <style>
+      .imagem-produto {
+         width: 300px;
+         height: auto;
+      }
+
+      .formulario-contato {
+         max-width: 600px;
+
+      }
+
+      .formulario-contato .button {
+         margin-top: 10px;
+      }
+   </style>
+   <!--- FIM CSS ---------------->
+
+
+</head>
+
+
+<body>
+   <section class="section">
+      <div class="container">
+         <h1 class="title">TechStore</h1>
+
+         <p class="subtitle">
+            Loja de produtos tecnológicos com site responsivo.
+         </p>
+      </div>
+   </section>
+   <nav class="navbar is-dark">
+      <div class="navbar-brand">
+         <a class="navbar-item" href="index.html">
+            <strong>TechStore</strong>
+         </a>
+         <a class="navbar-item" href="index.html">
+            Início
+         </a>
+         <a class="navbar-item" href="#produtos">
+            Produtos
+         </a>
+         <a class="navbar-item" href="#galeria">
+            Galeria
+         </a>
+      </div>
+   </nav>
+   <section class="section" id="produtos">
+      <div class="container">
+         <h2 class="title">Produtos</h2>
+         <table class="table">
+            <tr>
+               <th>Produto</th>
+               <th>Categoria</th>
+               <th>Preço</th>
+            </tr>
+
+            <tr>
+               <td>Mouse Gamer</td>
+               <td>Periféricos</td>
+               <td>R$ 150,00</td>
+            </tr>
+            <tr>
+               <td>Teclado Mecânico</td>
+               <td>Periféricos</td>
+               <td>R$ 300,00</td>
+            </tr>
+
+            <tr>
+               <td>Headset Gamer Pro</td>
+               <td>Periféricos</td>
+               <td>R$ 250,00</td>
+            </tr>
+         </table>
+      </div>
+   </section>
+   <section class="section">
+      <div class="container">
+         <h2 class="title">Contato</h2>
+
+         <form class="formulario-contato">
+            <label class="label">Nome:</label>
+            <input class="input" type="text">
+            <label class="label">E-mail:</label>
+            <input class="input" type="email">
+            <button class="button">Enviar</button>
+         </form>
+      </div>
+   </section>
+   <section class="section" id="galeria">
+      <div class="container">
+         <h2 class="title">Galeria</h2>
+         <div class="columns">
+            <div class="column">
+               <img class="imagem-produto" src="imagens/mouse_gamer.png" alt="Mouse Gamer">
+            </div>
+            <div class="column">
+               <img class="imagem-produto" src="imagens/teclado_mecanico.png" alt="Teclado Mecânico">
+            </div>
+            <div class="column">
+               <img class="imagem-produto" src="imagens/headset_gamer_pro.png" alt="Headset Gamer Pro">
+            </div>
+         </div>
+         <button class="button" id="abrir-modal">Ver promoção</button>
+         <div class="modal" id="modal-promocao">
+            <div class="modal-background">
+            </div>
+            <div class="modal-content">
+               <div class="box">
+                  <h2 class="title">Oferta especial</h2>
+                  <p>Compre o kit completo e ganhe 10% de desconto!</p>
+                  <button class="button" id="fechar-modal">Fechar</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- JavaScript -->
+   <script>
+      const modal = document.getElementById("modal-promocao");
+      const abrirModal = document.getElementById("abrir-modal");
+      const fecharModal = document.getElementById("fechar-modal");
+      abrirModal.addEventListener("click", function () {
+         modal.classList.add("is-active");
+      });
+      fecharModal.addEventListener("click", function () {
+         modal.classList.remove("is-active");
+      });
+   </script>
+   <!-- FIM JavaScript -->
+</body>
+
+</html>

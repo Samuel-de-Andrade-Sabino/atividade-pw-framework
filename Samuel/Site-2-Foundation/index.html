@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css">
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li class="menu-text">GameZone</li>
+                <li><a href="#">Início</a></li>
+                <li><a href="#jogos">Jogos</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="grid-container">
+        <h1>GameZone</h1>
+        <p>Seu espaço para descobrir novos jogos.</p>
+
+        <h2 id="jogos">Jogos</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Jogo</th>
+                    <th>Gênero</th>
+                    <th>Plataforma</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Minecraft</td>
+                    <td>Sobrevivência</td>
+                    <td>Multiplataforma</td>
+                </tr>
+
+                <tr>
+                    <td>Fortnite</td>
+                    <td>Battle Royale</td>
+                    <td>Multiplataforma</td>
+                </tr>
+
+                <tr>
+                    <td>Forza Horizon 5</td>
+                    <td>Corrida</td>
+                    <td>Xbox / PC</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Cadastre-se</h2>
+
+        <form>
+            <label>Nome
+                <input type="text" placeholder="Digite seu nome">
+            </label>
+            <label>E-mail
+                <input type="email" placeholder="Digite seu e-mail">
+            </label>
+
+            <button class="button" type="submit">Cadastrar</button>
+        </form>
+
+        <h2 id="galeria">Galeria de Jogos</h2>
+
+        <div class="grid-x grid-margin-x small-up-1 medium-up-3">
+            <div class="cell">
+                <h4>Minecraft</h4>
+                <img src="imagens/minecraft.jpg" alt="Minecraft">
+            </div>
+            <div class="cell">
+                <h4>Fortnite</h4>
+                <img src="imagens/fortnite.jpg" alt="Fortnite">
+            </div>
+            <div class="cell">
+                <h4>Forza Horizon 5</h4>
+                <img src="imagens/forza.jpg" alt="Forza Horizon 5">
+            </div>
+        </div>
+        <button class="button" data-open="modalDestaque">Ver jogo em destaque</button>
+
+        <div class="reveal" id="modalDestaque" data-reveal>
+            <h2>Jogo em Destaque</h2>
+            <p>Forza Horizon 5 é o destaque da semana!</p>
+            <button class="close-button" data-close aria-label="Fechar" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+
+</html>

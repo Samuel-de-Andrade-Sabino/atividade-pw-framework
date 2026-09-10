@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechWorld</title>
+
+    <!-- FRAMEWORK MATERIALIZE CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    >
+
+    <!-- ÍCONES -->
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+    >
+
+    <!-- CSS DO SITE -->
+    <style>
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            background-color: #f5f5f5;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+
+        nav {
+            background-color: #1565c0;
+        }
+
+        .page-footer {
+            background-color: #1565c0;
+        }
+
+        .section {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        h3,
+        h4 {
+            color: #1565c0;
+        }
+
+        .card-image img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .banner {
+            padding: 60px 20px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- ================= MENU ================= -->
+
+    <nav>
+        <div class="nav-wrapper container">
+
+            <a href="#" class="brand-logo">TechWorld</a>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- ================= CONTEÚDO ================= -->
+
+    <main class="container">
+
+
+        <!-- INÍCIO -->
+
+        <section id="inicio" class="section center-align banner">
+
+            <h3>Bem-vindo à TechWorld</h3>
+
+            <p class="flow-text">
+                Um site simples criado para apresentar produtos e novidades
+                do mundo da tecnologia.
+            </p>
+
+            <!-- BOTÃO DO MODAL -->
+
+            <a
+                class="waves-effect waves-light btn modal-trigger"
+                href="#modal1"
+            >
+                Saiba mais
+            </a>
+
+        </section>
+
+
+        <!-- ================= TABELA ================= -->
+
+        <section id="produtos" class="section">
+
+            <h4 class="center-align">
+                Produtos em destaque
+            </h4>
+
+
+            <table class="striped centered responsive-table">
+
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Categoria</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+                        <td>Notebook Gamer</td>
+                        <td>Computadores</td>
+                        <td>R$ 4.500</td>
+                    </tr>
+
+                    <tr>
+                        <td>Smartphone</td>
+                        <td>Celulares</td>
+                        <td>R$ 2.000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Headset Gamer</td>
+                        <td>Acessórios</td>
+                        <td>R$ 350</td>
+                    </tr>
+
+                    <tr>
+                        <td>Teclado Mecânico</td>
+                        <td>Periféricos</td>
+                        <td>R$ 450</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+
+        <!-- ================= GALERIA ================= -->
+
+        <section id="galeria" class="section">
+
+            <h4 class="center-align">
+                Galeria de Tecnologia
+            </h4>
+
+
+            <div class="row">
+
+
+                <!-- IMAGEM 1 -->
+
+                <div class="col s12 m4">
+
+                    <div class="card">
+
+                        <div class="card-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+                                alt="Notebook"
+                            >
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <p>
+                                Notebooks modernos para estudos,
+                                trabalho e jogos.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- IMAGEM 2 -->
+
+                <div class="col s12 m4">
+
+                    <div class="card">
+
+                        <div class="card-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+                                alt="Smartphone"
+                            >
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <p>
+                                Smartphones cada vez mais rápidos
+                                e modernos.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- IMAGEM 3 -->
+
+                <div class="col s12 m4">
+
+                    <div class="card">
+
+                        <div class="card-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+                                alt="Programação"
+                            >
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <p>
+                                A programação é uma das áreas mais
+                                importantes da tecnologia.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= FORMULÁRIO ================= -->
+
+        <section id="contato" class="section">
+
+            <h4 class="center-align">
+                Entre em contato
+            </h4>
+
+
+            <div class="row">
+
+                <form class="col s12" id="formContato">
+
+
+                    <!-- NOME -->
+
+                    <div class="input-field col s12">
+
+                        <input
+                            id="nome"
+                            type="text"
+                            required
+                        >
+
+                        <label for="nome">
+                            Nome
+                        </label>
+
+                    </div>
+
+
+
+                    <!-- EMAIL -->
+
+                    <div class="input-field col s12">
+
+                        <input
+                            id="email"
+                            type="email"
+                            required
+                        >
+
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                    </div>
+
+
+
+                    <!-- MENSAGEM -->
+
+                    <div class="input-field col s12">
+
+                        <textarea
+                            id="mensagem"
+                            class="materialize-textarea"
+                            required
+                        ></textarea>
+
+                        <label for="mensagem">
+                            Mensagem
+                        </label>
+
+                    </div>
+
+
+
+                    <!-- BOTÃO -->
+
+                    <div class="center-align">
+
+                        <button
+                            class="btn waves-effect waves-light"
+                            type="submit"
+                        >
+
+                            Enviar
+
+                            <i class="material-icons right">
+                                send
+                            </i>
+
+                        </button>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================= MODAL ================= -->
+
+    <div id="modal1" class="modal">
+
+        <div class="modal-content">
+
+            <h4>
+                Sobre a TechWorld
+            </h4>
+
+            <p>
+                A TechWorld é um site criado como projeto escolar.
+                O objetivo é apresentar alguns produtos e assuntos
+                relacionados ao mundo da tecnologia.
+            </p>
+
+            <p>
+                Este site utiliza HTML, CSS e JavaScript,
+                além do framework Materialize para facilitar
+                a criação de componentes responsivos.
+            </p>
+
+        </div>
+
+
+        <div class="modal-footer">
+
+            <a
+                href="#!"
+                class="modal-close waves-effect waves-green btn-flat"
+            >
+                Fechar
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= RODAPÉ ================= -->
+
+    <footer class="page-footer">
+
+        <div class="container">
+
+            <div class="center-align">
+
+                <p>
+                    © 2026 TechWorld - Projeto Escolar
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT DO MATERIALIZE ================= -->
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+
+
+
+    <!-- ================= JAVASCRIPT DO SITE ================= -->
+
+    <script>
+
+        // Espera a página carregar
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+
+                // Seleciona os modais
+
+                const modais =
+                    document.querySelectorAll(".modal");
+
+
+                // Inicializa os modais do Materialize
+
+                M.Modal.init(modais);
+
+            }
+        );
+
+
+
+        // FORMULÁRIO
+
+        const formulario =
+            document.getElementById("formContato");
+
+
+        formulario.addEventListener(
+            "submit",
+            function (event) {
+
+                // Impede a página de recarregar
+
+                event.preventDefault();
+
+
+                // Mostra mensagem
+
+                alert("Mensagem enviada com sucesso!");
+
+
+                // Limpa o formulário
+
+                formulario.reset();
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>

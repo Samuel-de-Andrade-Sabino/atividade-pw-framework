@@ -1,10 +1,30 @@
 # atividade-pw-framework
-Atividade de Programação Web sobre framework de responsividade com HTML, CSS e JavaScript.
-Este projeto foi desenvolvido em dupla e organizado em 4 arquivos, conforme a orientação de 2 arquivos por pessoa:
 
-- index.html
-- produtos.html
-- estilos.css
-- script.js
+Atividade de Programação Web sobre frameworks de responsividade com HTML, CSS e JavaScript.
 
-A separação foi feita para manter a organização entre estrutura HTML, estilização CSS e interações JavaScript.
+O projeto foi desenvolvido em dupla, com 2 sites por integrante. Cada site utiliza um framework de responsividade diferente, sem utilizar Bootstrap.
+
+## Samuel
+
+### Site 1 - Bulma
+Site TechStore desenvolvido utilizando o framework Bulma.
+
+### Site 2 - Foundation
+Site GameZone desenvolvido utilizando o framework Foundation.
+
+## João
+
+### Site 1 - Materialize
+Site desenvolvido utilizando o framework Materialize.
+
+### Site 2 - UIkit
+Site desenvolvido utilizando o framework UIkit.
+
+## Frameworks utilizados
+
+- Bulma
+- Foundation
+- Materialize
+- UIkit
+
+Cada site apresenta exemplos de componentes responsivos utilizando HTML, CSS e JavaScript.
